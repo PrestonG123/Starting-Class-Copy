@@ -63,7 +63,7 @@ After School: Monday, Tuesday, & Thursday
 
 If you need other accommodations, please see your instructor to make an appointment.
 
-![alt text](../images/cheating.jpg "CC 2.0: Generic | Cropped, Grey Scale, Selective Blur  |  Craig Sunter")
+![alt text](https://prestong123.github.io/Starting-Class-Copy/cheating.jpg)
 
 #### Cheating & Academic Dishonesty
 
