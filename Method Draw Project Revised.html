@@ -1,0 +1,42 @@
+<html>
+  <script>
+    var returns = ["Area = 1/2bh", "Perimeter = a + b + c",
+    "Area = (pi)r^2", "Perimeter = 2(pi)r",
+    "Area = a^2", "Perimeter = 4a"]
+    function changeformula(area, perimeter){
+     document.getElementById("areatext").innerHTML = returns[area];
+     document.getElementById("perimetertext").innerHTML = returns[perimeter];
+     }
+  </script>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#0f0f00" id="svg_1" height="361.000009" width="541.999986" y="19.5" x="19" stroke-width="13" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_3" y="79.5" x="331.5" fill-opacity="null" stroke-width="0" stroke="#0f0f00" fill="#000000"/>
+  <text style="cursor: move;" stroke="#0f0f00" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_4" y="58" x="219.296875" stroke-width="0" fill="#706a6a">Click a Shape</text>
+<g>
+  <rect onclick="changeformula(4,5)" id="square" height="60" width="60" y="93.5" x="441.5" stroke-opacity="null" stroke-width="0" stroke="#0f0f00" fill="#e53d3d" onmouseover=" document.getElementById('square').setAttribute('stroke', '#000'); document.getElementById('square').setAttribute('stroke-width', '5');" onmouseout=" document.getElementById('square').setAttribute('stroke-width', '0');"/>
+  <ellipse onclick="changeformula(2,3)" id="circle" ry="36" rx="35.5" cy="123" cx="288" stroke-opacity="null" stroke-width="0" stroke="#0f0f00" fill="#5552f2" onmouseover=" document.getElementById('circle').setAttribute('stroke', '#000'); document.getElementById('circle').setAttribute('stroke-width', '5');" onmouseout=" document.getElementById('circle').setAttribute('stroke-width', '0');"/>
+  <path onclick="changeformula(0,1)" id="triangle" d="m64.000002,156.215619l40.999998,-69.999997l40.999998,69.999997l-81.999997,0z" stroke-opacity="null" stroke-width="0" stroke="#0f0f00" fill="#00bf00" onmouseover=" document.getElementById('triangle').setAttribute('stroke', '#000'); document.getElementById('triangle').setAttribute('stroke-width', '5');" onmouseout=" document.getElementById('triangle').setAttribute('stroke-width', '0');"/>
+  <rect stroke="#0f0f00" id="svg_8" height="180.000006" width="373.000005" y="179.499991" x="103.500002" stroke-opacity="null" stroke-width="4" fill="#c4c2c2"/>
+   <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="areatext" y="234.5" x="244.304688" stroke-opacity="null" stroke-width="0" stroke="#0f0f00" fill="#000000">Area = ?</text>
+   <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="perimetertext" y="309.5" x="217.640625" stroke-opacity="null" stroke-width="0" stroke="#0f0f00" fill="#000000">Perimeter = ?</text>
+</g>
+ </g>
+</svg>
+</body>
+<p>a = side length 1 <br>
+   b = side length 2 <br>
+   c = side length 2 <br>
+   h = height <br>
+   r = radius <br>
+</p>
+</html>
